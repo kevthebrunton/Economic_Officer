@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IncomeSource">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add your sources of income here..."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/incomeContainor3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <TextView
+        android:id="@+id/incomeContainor3"
+        android:layout_width="268dp"
+        android:layout_height="266dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#D2DCFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="0.408" />
+
+    <Button
+        android:id="@+id/btnDeleteIncome2"
+        android:layout_width="98dp"
+        android:layout_height="38dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#7232FA"
+        android:drawableLeft="@drawable/addincome"
+        android:foregroundGravity="left|center_vertical"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="@+id/incomeContainor3"
+        app:layout_constraintEnd_toEndOf="@+id/incomeContainor3"
+        app:layout_constraintStart_toStartOf="@+id/incomeContainor3"
+        app:layout_constraintTop_toTopOf="@+id/incomeContainor3"
+        app:layout_constraintVertical_bias="0.934" />
+
+    <TextView
+        android:id="@+id/incomeView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="44dp"
+        android:text="Income Type:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/incomeView5"
+        app:layout_constraintStart_toStartOf="@+id/incomeContainor3"
+        app:layout_constraintTop_toTopOf="@+id/incomeContainor3"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/incomeView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="96dp"
+        android:text="Amount:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDeleteIncome2"
+        app:layout_constraintStart_toStartOf="@+id/incomeContainor3" />
+
+    <Button
+        android:id="@+id/btnBackToIncome1"
+        android:layout_width="52dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#00FFFFFF"
+        android:drawableLeft="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="413dp"
+        android:layout_height="53dp"
+        android:background="#7232FA"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7232FA"
+        android:fontFamily="@font/nobile_bold"
+        android:text="Income"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView20"
+        app:layout_constraintEnd_toEndOf="@+id/textView20"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+    <EditText
+        android:id="@+id/income_id"
+        android:layout_width="147dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Passive/Monthly"
+        android:inputType="textPersonName"
+        android:textColor="#6A6464"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberAmount"
+        app:layout_constraintEnd_toEndOf="@+id/incomeContainor3"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toEndOf="@+id/incomeView4"
+        app:layout_constraintTop_toTopOf="@+id/incomeContainor3"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <EditText
+        android:id="@+id/editTextNumberAmount"
+        android:layout_width="144dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="84dp"
+        android:ems="10"
+        android:hint="Rs."
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btnDeleteIncome2"
+        app:layout_constraintEnd_toEndOf="@+id/incomeContainor3"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/incomeView5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

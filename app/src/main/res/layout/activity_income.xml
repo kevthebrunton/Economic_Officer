@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Income">
+
+    <Button
+        android:id="@+id/btnBackToDashBoard"
+        android:layout_width="52dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#00FFFFFF"
+        android:drawableLeft="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="413dp"
+        android:layout_height="53dp"
+        android:background="#7232FA"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7232FA"
+        android:fontFamily="@font/nobile_bold"
+        android:text="Income"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Add your sources of income here..."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/incomeContainor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <TextView
+        android:id="@+id/incomeContainor"
+        android:layout_width="268dp"
+        android:layout_height="266dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#D2DCFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <Button
+        android:id="@+id/btnAddIncomeSource"
+        android:layout_width="98dp"
+        android:layout_height="38dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#7232FA"
+        android:drawableLeft="@drawable/addincome"
+        android:foregroundGravity="left|center_vertical"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="@+id/incomeContainor"
+        app:layout_constraintEnd_toEndOf="@+id/incomeContainor"
+        app:layout_constraintStart_toStartOf="@+id/incomeContainor"
+        app:layout_constraintTop_toTopOf="@+id/incomeContainor"
+        app:layout_constraintVertical_bias="0.922" />
+
+    <TextView
+        android:id="@+id/btnIncomeView1"
+        android:layout_width="173dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/circular_button"
+        android:backgroundTint="#2954F4"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Monthly Income"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/incomeContainor"
+        app:layout_constraintStart_toStartOf="@+id/incomeContainor"
+        app:layout_constraintTop_toTopOf="@+id/incomeContainor" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#7232FA"
+        android:text="Delete"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddIncomeSource"
+        app:layout_constraintEnd_toEndOf="@+id/incomeContainor"
+        app:layout_constraintStart_toStartOf="@+id/incomeContainor"
+        app:layout_constraintTop_toBottomOf="@+id/btnIncomeView1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
